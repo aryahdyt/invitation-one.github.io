@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="theme-color" content="#BC8887" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Template 1</title>
+
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:locale" content="id_ID" />
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <!-- Bulma Version 0.8.x-->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/bulma-tooltip@0.1.5/dist/bulma-tooltip.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/menikah.css" />
+  <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
+  <script src="https://kit.fontawesome.com/2828f7885a.js"
+    integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG" crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/jquery.coundown.js"></script>
+  <link rel="icon" type="image/png" href="image/favicon.png" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23064379-20"></script>
+  <!-- Begin Script for Countdown -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23064379-20');
+  </script>
+  <!-- Begin Script for Countdown -->
+
+  <!-- Github Button -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+
+<body>
+  <!-- Begin Preloader -->
+  <div class="preloader-wrapper">
+    <div class="preloader">
+      <img src="image/favicon.png" alt="Flower" />
+    </div>
+  </div>
+  <!-- End Preloader-->
+  <!-- Begin Header -->
+  <div class="header-wrapper" id="home">
+    <!-- Begin Hero -->
+    <section class="hero is-large">
+      <!-- Begin Mobile Nav -->
+      <nav class="navbar is-transparent is-hidden-desktop">
+        <!-- Begin Burger Menu -->
+        <div class="navbar-brand is-fixed-top">
+          <div class="navbar-burger burger" data-target="mobile-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <!-- End Burger Menu -->
+        <div id="mobile-nav" class="navbar-menu">
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <a class="navbar-item" href="#">
+                Waktu
+              </a>
+            </div>
+            <div class="navbar-item">
+              <a class="navbar-item" href="#">
+                Lokasi
+              </a>
+            </div>
+
+            <div class="navbar-item">
+              <a class="navbar-item" href="#">
+                Galeri
+              </a>
+            </div>
+            <div class="navbar-item">
+              <a class="navbar-item" href="#">
+                RSVP
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- End Mobile Nav -->
+      <!-- Begin Hero Content-->
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="subtitle">Undangan Pernikahan</h1>
+          <h2 class="title">Mas & Mba</h2>
+          <h4 class="subtitle tempatwaktu">
+
+            Sabtu, 21 Maret 2020
+            </br>
+            RM Pondok Kenanga, Jakasampurna
+            <!-- </br> -->
+            Kota Bekasi
+
+          </h4>
+        </div>
+        <!-- Start Countdown -->
+        <div>
+          <ul id="hitungmundur">
+            <li><span class="days">00</span>
+              <p class="days_text">Hari</p>
+            </li>
+            <li class="separator">:</li>
+            <li><span class="hours">00</span>
+              <p class="hours_text">Jam</p>
+            </li>
+            <li class="separator">:</li>
+            <li><span class="minutes">00</span>
+              <p class="minutes_text">Menit</p>
+            </li>
+            <li class="separator">:</li>
+            <li><span class="seconds">00</span>
+              <p class="seconds_text">Detik</p>
+            </li>
+          </ul>
+          <div class="spasi">
+          </div>
+          <script type="text/javascript">
+            var now = new Date();
+            var day = now.getDate();
+            var month = now.getMonth() + 1;
+            var year = now.getFullYear() + 1;
+
+            var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
+            var harih = '12/31/2022 17:00:00';
+
+            $('#hitungmundur').countdown({
+              date: harih, // TODO Date format: 07/27/2017 17:00:00
+              offset: +7, // TODO Your Timezone Offset
+              day: 'Hari',
+              days: 'Hari'
+            }, function () {
+              // alert('Done!');
+            });
+          </script>
+        </div>
+        <!-- End Countdown -->
+      </div>
+      <!-- End Hero Content-->
+      <!-- Begin Hero Menu -->
+      <div class="hero-foot ">
+        <div class="hero-foot--wrapper">
+          <div class="columns">
+            <div class="column is-12 hero-menu-desktop has-text-centered">
+              <ul>
+                <li class="is-active">
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">Waktu</a>
+                </li>
+                <li>
+                  <a href="#">Lokasi</a>
+                </li>
+                <li>
+                  <a href="#">Galeri</a>
+                </li>
+                <li>
+                  <a href="#">RSVP</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Hero Menu -->
+    </section>
+    <!-- End Hero -->
+  </div>
+  <!-- End Header -->
+
+  <!-- Begin Main Content -->
+  <div class="main-content">
+    <!-- Begin regular-section-->
+    <section
+      class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content color-font-1"
+      id="regular-section">
+
+      <div data-aos="fade-up" data-aos-easing="linear">
+        <!-- <img src="image/bismillah.png" class="bismillah has-text-centered" alt="Bismillahirrahmaanirrahiim"> -->
+        <div class="text-edwarn-script has-text-centered bismillah is-size-1 is-size-3-mobile">Bismillahirrahmanirrahim
+        </div>
+      </div>
+
+
+
+      <div class="ayat" data-aos="fade-up" data-aos-easing="linear">
+        <div class="columns is-centered">
+          <div class="column is-three-quarters">
+            <div class="desc-ayat is-size-6">“Dan diantara tanda-tanda kekuasaan-Nya ialah diciptakan Nya untukmu
+              pasangan hidup
+              dari jenismu sendiri supaya kamu mendapat ketenangan hati dan dijadikan-Nya kasih sayang diantara kamu.
+              Sesungguhnya yang demikian menjadi tanda-tanda kebesaran-Nya bagi orang-orang yang berfikir..”</div>
+            <div class="surat-ayat">(Ar-Rum: 21)</div>
+          </div>
+        </div>
+
+        <span class="space40px"></span>
+    </section>
+    <!-- End regular-section-->
+
+    <!-- Begin client Section -->
+    <section class="section-dark" id="client">
+      <div class="container">
+        <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
+          <div class="column"></div>
+          <div class="column is-4 has-vertically-aligned-content color-font-1">
+            <figure class="image">
+              <img src="./image/simas.jpeg" alt="">
+            </figure>
+
+            <div class="is-size-4 has-text-centered is-capitalized text-edwarn-script has-text-weight-semibold">
+              Si nama Mas nya
+            </div>
+            <div class="is-size-6 has-text-centered has-text-weight-normal">
+              Putra kedua dari Bapak Suprayogi & Ibu Kuskaryawantini</div>
+          </div>
+
+          <!-- <div class="column text-edwarn-script is-size-1 has-text-centered  is-flex is-vcentered has-text-weight-bold">
+            &
+          </div> -->
+
+          <div class="column is-4 has-vertically-aligned-content color-font-1">
+            <figure class="image">
+              <img src="./image/simba.jpeg" alt="">
+            </figure>
+            <div class="is-size-4 has-text-centered is-capitalized text-edwarn-script has-text-weight-semibold">
+              Si nama Mba nya
+            </div>
+            <div class="is-size-6 has-text-centered has-text-weight-normal">
+              Putra kedua dari Bapak Suprayogi & Ibu Kuskaryawantini</div>
+          </div>
+          <div class="column"></div>
+        </div>
+      </div>
+    </section>
+    <!-- End client Content -->
+
+    <section class="section-light regular-section is-fullheight" id="">
+      <div class="container">
+        <div data-aos="fade-up" data-aos-easing="linear">
+          <!-- <img src="image/bismillah.png" class="bismillah has-text-centered" alt="Bismillahirrahmaanirrahiim"> -->
+          <div class="text-edwarn-script has-text-centered is-size-2 has-text-weight-normal">Assalamualaikum
+            Warahmatullahi Wabarakatuh</div>
+
+          <div class="columns is-centered">
+            <div class="column is-four-fifths has-text-centered">
+              <div class="mb-3rem is-size-6">Dengan memohon ridho Allah SWT dan segenap kerendahan hati, izinkanlah kami
+                menyampaikan
+                kabar bahagia pernikahan kami yang akan dilaksanakan pada :</div>
+
+              <div class="columns desc-waktu">
+                <div class="column">
+                  <span class="day-name-waktu has-text-weight-semibold is-size-6">Sabtu</span>
+                  <span class="day-number-waktu has-text-weight-bold is-size-1">21</span>
+                  <span class="month-year-waktu has-text-weight-semibold is-size-6">Maret 2021</span>
+                </div>
+                <div class="column">
+                  <span class="akad-waktu has-text-weight-normal is-size-6">Akad Nikah</span>
+                  <span class="akad-hour-waktu has-text-weight-bold is-size-4">17.00 WIB</span>
+                </div>
+                <div class="column">
+                  <div>
+                    <p class="resepsi-waktu has-text-weight-normal is-size-6">Resepsi</p>
+                    <p class="resepsi-hour-waktu has-text-weight-bold is-size-5">19.00 - 21.00 WIB</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Begin live_streaming Section -->
+    <section class="section-darker" id="live_streaming">
+      <div data-aos="fade-up" data-aos-easing="linear">
+        <div class="text-edwarn-script has-text-centered is-size-2 has-text-weight-normal">Live Streaming</div>
+        <div class="columns is-centered">
+          <div class="column is-four-fifths has-text-centered">
+            <div class="mb-3rem is-size-6">Tanpa mengurangi rasa hormat, acara pernikahan hanya akan dihadiri
+              oleh
+              keluarga serta kerabat dalam jumlah undangan terbatas dan mengikuti protokol kesehatan pemerintah.
+              Bapak/Ibu, Saudara/I dapat hadir secara virtual dalam acara pernikahan putra-putri kami melalui :</div>
+            <figure class="image is-16by9">
+              <iframe class="has-ratio" width="640" height="360"
+                src="https://www.youtube.com/embed/S6leNuXd-6Q?controls=0" frameborder="0" allowfullscreen></iframe>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End live_streaming Content -->
+
+    <!-- Begin say Section -->
+    <section class="section-img" id="say">
+      <div data-aos="fade-up" data-aos-easing="linear">
+        <div class="text-edwarn-script has-text-centered is-size-1 has-text-weight-normal has-text-white">
+          Ucapan Dan Doa
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-one-third">
+            <form action="" class="mb-1rem">
+              <!-- <div class="field">
+                <div class="control">
+                  <input class="input" type="text" placeholder="Name" value="Dari" readonly>
+                </div>
+              </div> -->
+              <div class="field">
+                <div class="field-label"></div>
+                <div class="field-body">
+                  <div class="field has-addons">
+                    <div class="control">
+                      <a class="button is-static">
+                        From
+                      </a>
+                    </div>
+                    <input class="input" type="text" placeholder="Name" value="Nama tamu" readonly>
+                  </div>
+                </div>
+              </div>
+              <div class="field">
+                <div class="control">
+                  <textarea class="textarea has-fixed-size" placeholder="Berikan Ucapan Atau Doa Restu"></textarea>
+                </div>
+              </div>
+
+              <div class="buttons is-centered">
+                <button type="button" class="btn-submit-say is-responsive">
+                  Kirim Ucapan
+                </button>
+              </div>
+            </form>
+
+            <div class="parent-say">
+              <div class="box">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48 rounded">
+                      <img class="is-rounded" src="https://bulma.io/images/placeholders/96x96.png"
+                        alt="Placeholder image">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="is-size-6 has-text-weight-semibold">Nama tamu</div>
+                    <small>1 hours ago</small>
+                    <div class="is-size-6 has-text-weight-normal">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Phasellus nec iaculis mauris.
+                      <br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48 rounded">
+                      <img class="is-rounded" src="https://bulma.io/images/placeholders/96x96.png"
+                        alt="Placeholder image">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="is-size-6 has-text-weight-semibold">Nama tamu</div>
+                    <small>1 hours ago</small>
+                    <div class="is-size-6 has-text-weight-normal">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Phasellus nec iaculis mauris.
+                      <br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48 rounded">
+                      <img class="is-rounded" src="https://bulma.io/images/placeholders/96x96.png"
+                        alt="Placeholder image">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="is-size-6 has-text-weight-semibold">Nama tamu</div>
+                    <small>1 hours ago</small>
+                    <div class="is-size-6 has-text-weight-normal">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Phasellus nec iaculis mauris.
+                      <br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End say Content -->
+
+    <!-- Begin live_streaming Section -->
+    <section class="section-darker" id="live_streaming">
+      <div data-aos="fade-up" data-aos-easing="linear">
+        <div class="text-edwarn-script has-text-centered is-size-2 has-text-weight-normal">Tanda Kasih</div>
+        <div class="columns is-centered">
+          <div class="column is-four-fifths has-text-centered">
+            <div class="mb-3rem is-size-6">Terima kasih telah berkenan mengirimkan hadiah untuk pernikahan kami. Hadiah
+              dapat dikirimkan melalui transfer bank ke rekening di bawah ini :</div>
+            <div class="box-transfer columns is-flex is-vcentered has-text-centered">
+              <div class="column">
+                <h1 class="title has-text-weight-bold is-size-4">Nama Bank</h1>
+                <div style="margin-bottom: 1.5rem;">
+                  <p class="has-text-weight-normal is-size-6">12313213</p>
+                  <p class="has-text-weight-normal is-size-6">A/n Mas nya</p>
+                </div>
+                <button type="button" class="btn-copy-rekenening">Copy Rekening</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End live_streaming Content -->
+
+    <!-- Begin galeri -->
+    <section class="section-light regular-section is-fullheight" id="galeri">
+      <div class="container">
+        <div data-aos="fade-up" data-aos-easing="linear">
+          <div class="text-edwarn-script has-text-centered is-size-2 has-text-weight-normal">Galeri Foto</div>
+          <div class="container is-fluid">
+            <div class="columns">
+              <div class="column">
+                <img src="https://source.unsplash.com/800x1000/?wedding">
+                <img src="https://source.unsplash.com/800x550/?wedding">
+              </div>
+              <div class="column">
+                <img src="https://source.unsplash.com/800x600/?wedding">
+                <img src="https://source.unsplash.com/800x650/?wedding">
+              </div>
+              <div class="column">
+                <img src="https://source.unsplash.com/800x900/?weeding">
+                <img src="https://source.unsplash.com/800x700/?wedding">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <script>
+        $("#myContent li img").each(function (i, el) {
+          this.height = Math.min(this.height, 1 + Math.floor(Math.random() * this.height * 2));
+          this.width = Math.min(this.height, 1 + Math.floor(Math.random() * this.width * 2))
+        });
+      </script> -->
+    </section>
+    <!-- End galeri -->
+  </div>
+  <!-- End Main Content -->
+
+  <div class="music" style="display: none;">
+    <!-- <audio src="/music/adera_muara.mp3" id="my_audio" loop="loop"></audio> -->
+    <audio id="my_audio">
+      <source src="./music/adera_muara.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <!-- <iframe src="./music/adera_muara.mp3" allow="autoplay" id="audio" style="display: none"></iframe> -->
+
+
+  <!-- Begin Footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="columns is-flex is-vcentered has-text-centered">
+        <div class="column">
+          <div class="name-client">Mas & Mba</div>
+          <div class="thankyou">Terimakasih</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Footer -->
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menikah.js"></script>
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      easing: "ease-out",
+      duration: 800,
+    });
+  </script>
+</body>
+
+</html>
