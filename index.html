@@ -54,12 +54,33 @@
   <!-- End Preloader-->
   <!-- Begin Header -->
   <div class="header-wrapper" id="home">
+    <nav class="navbar-desktop is-hidden-mobile" role="navigation" aria-label="main navigation">
+      <div class="is-12 hero-menu-desktop has-text-centered baskervile-normal">
+        <ul>
+          <li class="is-active">
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">EVENT</a>
+          </li>
+          <li>
+            <a href="#">UCAPAN & DOA</a>
+          </li>
+          <li>
+            <a href="#">TANDA KASIH</a>
+          </li>
+          <li>
+            <a href="#">TENTANG ARYA & NURUL</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <!-- Begin Hero -->
     <section class="hero is-large">
       <!-- Begin Mobile Nav -->
       <nav class="navbar is-transparent is-hidden-desktop">
         <!-- Begin Burger Menu -->
-        <div class="navbar-brand is-fixed-top">
+        <div class="navbar-brand is-fixed-top has-text-white-bis">
           <div class="navbar-burger burger" data-target="mobile-nav">
             <span></span>
             <span></span>
@@ -68,24 +89,24 @@
         </div>
         <!-- End Burger Menu -->
         <div id="mobile-nav" class="navbar-menu">
-          <div class="navbar-end">
-            <div class="navbar-item">
+          <div class="navbar-end baskervile-normal">
+            <div class="">
               <a class="navbar-item" href="#">
                 Waktu
               </a>
             </div>
-            <div class="navbar-item">
+            <div class="">
               <a class="navbar-item" href="#">
                 Lokasi
               </a>
             </div>
 
-            <div class="navbar-item">
+            <div class="">
               <a class="navbar-item" href="#">
                 Galeri
               </a>
             </div>
-            <div class="navbar-item">
+            <div class="">
               <a class="navbar-item" href="#">
                 RSVP
               </a>
@@ -96,226 +117,196 @@
       <!-- End Mobile Nav -->
       <!-- Begin Hero Content-->
       <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="subtitle">Undangan Pernikahan</h1>
-          <h2 class="title">Mas & Mba</h2>
-          <h4 class="subtitle tempatwaktu">
-
+        <div class="container has-text-centered align-item-center">
+          <div class="baskervile-normal hero-title mb-1rem is-size-4-mobile">Undangan Pernikahan</div>
+          <div class="baskervile-normal hero-tamu mb-3rem is-size-6-mobile">KEPADA NAMA TAMU </div>
+          <div class="hero-client mb-3rem">Arya <span style="font-size: 70%;"> & </span>Nurul</div>
+          <div class="baskervile-normal hero-date mb-1rem">
             Sabtu, 21 Maret 2020
-            </br>
-            Istana Kepresidenan, Gambir Jakarta
-            <!-- </br> -->
-            Kota Bekasi
-
-          </h4>
-        </div>
-        <!-- Start Countdown -->
-        <div>
-          <ul id="hitungmundur">
-            <li><span class="days">00</span>
-              <p class="days_text">Hari</p>
-            </li>
-            <li class="separator">:</li>
-            <li><span class="hours">00</span>
-              <p class="hours_text">Jam</p>
-            </li>
-            <li class="separator">:</li>
-            <li><span class="minutes">00</span>
-              <p class="minutes_text">Menit</p>
-            </li>
-            <li class="separator">:</li>
-            <li><span class="seconds">00</span>
-              <p class="seconds_text">Detik</p>
-            </li>
-          </ul>
-          <div class="spasi">
           </div>
-          <script type="text/javascript">
-            var now = new Date();
-            var day = now.getDate();
-            var month = now.getMonth() + 1;
-            var year = now.getFullYear() + 1;
+          <div class="baskervile-normal hero-location mb-3rem">Istana Kepresidenan, Gambir Jakarta</div>
+          <!-- Start Countdown -->
 
-            var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
-            var harih = '12/31/2022 17:00:00';
-
-            $('#hitungmundur').countdown({
-              date: harih, // TODO Date format: 07/27/2017 17:00:00
-              offset: +7, // TODO Your Timezone Offset
-              day: 'Hari',
-              days: 'Hari'
-            }, function () {
-              // alert('Done!');
-            });
-          </script>
-        </div>
-        <!-- End Countdown -->
-      </div>
-      <!-- End Hero Content-->
-      <!-- Begin Hero Menu -->
-      <div class="hero-foot ">
-        <div class="hero-foot--wrapper">
-          <div class="columns">
-            <div class="column is-12 hero-menu-desktop has-text-centered">
-              <ul>
-                <li class="is-active">
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="#">Waktu</a>
-                </li>
-                <li>
-                  <a href="#">Lokasi</a>
-                </li>
-                <li>
-                  <a href="#">Galeri</a>
-                </li>
-                <li>
-                  <a href="#">RSVP</a>
-                </li>
-              </ul>
+          <div class="hero-countdown baskervile-normal color-brown-dark">
+            <div class="box-coundown">
+              <span class="coundown-number">
+                12
+              </span>
+              <span class="coundown-desc">
+                Jam
+              </span>
+            </div>
+            <div class="box-coundown">
+              <span class="coundown-number">
+                12
+              </span>
+              <span class="coundown-desc">
+                Jam
+              </span>
+            </div>
+            <div class="box-coundown">
+              <span class="coundown-number">
+                12
+              </span>
+              <span class="coundown-desc">
+                Jam
+              </span>
+            </div>
+            <div class="box-coundown">
+              <span class="coundown-number">
+                12
+              </span>
+              <span class="coundown-desc">
+                Jam
+              </span>
             </div>
           </div>
+          <!-- End Countdown -->
         </div>
       </div>
-      <!-- End Hero Menu -->
     </section>
     <!-- End Hero -->
   </div>
   <!-- End Header -->
-
-  <!-- Begin Main Content -->
   <div class="main-content">
+    <div class="flower-left-el z-index-1" data-aos="fade-right" data-aos-easing="linear">
+    </div>
     <!-- Begin regular-section-->
-    <section
-      class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content color-font-1"
-      id="regular-section">
-
+    <section class="section section-texture has-text-centered has-vertically-aligned-content ayat">
       <div data-aos="fade-up" data-aos-easing="linear">
         <!-- <img src="image/bismillah.png" class="bismillah has-text-centered" alt="Bismillahirrahmaanirrahiim"> -->
-        <div class="text-edwarn-script has-text-centered bismillah is-size-1 is-size-3-mobile">Bismillahirrahmanirrahim
+        <div class="edwardian-normal text-header mb-3rem is-size-1-mobile">Bismillahirrahmanirrahim
         </div>
-      </div>
-
-
-
-      <div class="ayat" data-aos="fade-up" data-aos-easing="linear">
-        <div class="columns is-centered">
+        <div class="columns is-centered baskervile-normal" data-aos="fade-up" data-aos-easing="linear">
           <div class="column is-three-quarters">
-            <div class="desc-ayat is-size-6">“Dan diantara tanda-tanda kekuasaan-Nya ialah diciptakan Nya untukmu
+            <div class="desc-ayat mb-3rem is-size-6-mobile">“Dan diantara tanda-tanda kekuasaan-Nya ialah diciptakan Nya
+              untukmu
               pasangan hidup
               dari jenismu sendiri supaya kamu mendapat ketenangan hati dan dijadikan-Nya kasih sayang diantara kamu.
               Sesungguhnya yang demikian menjadi tanda-tanda kebesaran-Nya bagi orang-orang yang berfikir..”</div>
             <div class="surat-ayat">(Ar-Rum: 21)</div>
           </div>
         </div>
-
-        <span class="space40px"></span>
+      </div>
     </section>
     <!-- End regular-section-->
 
-    <!-- Begin client Section -->
-    <section class="section-dark" id="client">
-      <div class="container">
-        <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
-          <div class="column"></div>
-          <div class="column is-4 has-vertically-aligned-content color-font-1">
-            <figure class="image">
-              <img src="./image/simas.jpeg" alt="">
-            </figure>
+    <div class="flower-right-el z-index-1" data-aos="fade-left" data-aos-easing="linear">
+    </div>
 
-            <div class="is-size-4 has-text-centered is-capitalized text-edwarn-script has-text-weight-semibold">
+    <!-- <div class="element-flower">
+      <img src="./image/1-01.png" class="right-el" alt="">
+    </div> -->
+    <section class="section-dark client">
+      <div class="container">
+        <div class="columns is-multiline is-vcentered color-brown-dark" data-aos="fade-up" data-aos-easing="linear">
+          <div class="column"></div>
+          <div class="column is-4 has-text-centered">
+            <div class="image is-inline-block">
+              <img class="img-client" src="./image/simas.jpeg" alt="">
+            </div>
+            <div class="edwardian-normal client-name">
               Si nama Mas nya
             </div>
-            <div class="is-size-6 has-text-centered has-text-weight-normal">
+            <div class="baskervile-normal client-desc">
               Putra kedua dari Bapak Suprayogi & Ibu Kuskaryawantini</div>
           </div>
 
-          <!-- <div class="column text-edwarn-script is-size-1 has-text-centered  is-flex is-vcentered has-text-weight-bold">
-            &
-          </div> -->
+          <div class="baskervile-normal column client-and">&</div>
 
-          <div class="column is-4 has-vertically-aligned-content color-font-1">
-            <figure class="image">
-              <img src="./image/simba.jpeg" alt="">
-            </figure>
-            <div class="is-size-4 has-text-centered is-capitalized text-edwarn-script has-text-weight-semibold">
-              Si nama Mba nya
+          <div class="column is-4 has-text-centered">
+            <div class="image is-inline-block">
+              <img class="img-client" src="./image/simas.jpeg" alt="">
             </div>
-            <div class="is-size-6 has-text-centered has-text-weight-normal">
+            <div class="edwardian-normal client-name">
+              Si nama Mas nya
+            </div>
+            <div class="baskervile-normal client-desc">
               Putra kedua dari Bapak Suprayogi & Ibu Kuskaryawantini</div>
           </div>
+
           <div class="column"></div>
         </div>
       </div>
     </section>
     <!-- End client Content -->
 
-    <section class="section-light regular-section is-fullheight" id="">
-      <div class="container">
-        <div data-aos="fade-up" data-aos-easing="linear">
-          <!-- <img src="image/bismillah.png" class="bismillah has-text-centered" alt="Bismillahirrahmaanirrahiim"> -->
-          <div class="text-edwarn-script has-text-centered is-size-2 has-text-weight-normal">Assalamualaikum
-            Warahmatullahi Wabarakatuh</div>
+    <section class="section section-texture has-text-centered has-vertically-aligned-content event">
+      <div data-aos="fade-up" data-aos-easing="linear">
+        <!-- <img src="image/bismillah.png" class="bismillah has-text-centered" alt="Bismillahirrahmaanirrahiim"> -->
+        <div class="edwardian-normal text-header is-size-2-mobile mb-3rem">Assalamualaikum Warahmatullahi Wabarakatuh
+        </div>
+        <div class="columns is-centered baskervile-normal" data-aos="fade-up" data-aos-easing="linear">
+          <div class="column is-three-quarters">
+            <div class="columns">
+              <div class="column">
+                <div class="box card-pink">
+                  <div class="mb-1rem">
+                    <svg width="40" height="44" viewBox="0 0 40 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.16675 19.8334H13.5001V24.1667H9.16675V19.8334ZM9.16675 28.5H13.5001V32.8334H9.16675V28.5ZM17.8334 19.8334H22.1667V24.1667H17.8334V19.8334ZM17.8334 28.5H22.1667V32.8334H17.8334V28.5ZM26.5001 19.8334H30.8334V24.1667H26.5001V19.8334ZM26.5001 28.5H30.8334V32.8334H26.5001V28.5Z"
+                        fill="#4C2F30" />
+                      <path
+                        d="M4.83333 43.6667H35.1667C37.5565 43.6667 39.5 41.7232 39.5 39.3334V9.00004C39.5 6.61021 37.5565 4.66671 35.1667 4.66671H30.8333V0.333374H26.5V4.66671H13.5V0.333374H9.16667V4.66671H4.83333C2.4435 4.66671 0.5 6.61021 0.5 9.00004V39.3334C0.5 41.7232 2.4435 43.6667 4.83333 43.6667ZM35.1667 13.3334L35.1688 39.3334H4.83333V13.3334H35.1667Z"
+                        fill="#4C2F30" />
+                    </svg></div>
 
-          <div class="columns is-centered">
-            <div class="column is-four-fifths has-text-centered">
-              <div class="mb-3rem is-size-6">Dengan memohon ridho Allah SWT dan segenap kerendahan hati, izinkanlah kami
-                menyampaikan
-                kabar bahagia pernikahan kami yang akan dilaksanakan pada :</div>
-
-              <div class="columns desc-waktu">
-                <div class="column">
-                  <span class="day-name-waktu has-text-weight-semibold is-size-6">Sabtu</span>
-                  <span class="day-number-waktu has-text-weight-bold is-size-1">21</span>
-                  <span class="month-year-waktu has-text-weight-semibold is-size-6">Maret 2021</span>
-                </div>
-                <div class="column">
-                  <span class="akad-waktu has-text-weight-normal is-size-6">Akad Nikah</span>
-                  <span class="akad-hour-waktu has-text-weight-bold is-size-4">17.00 WIB</span>
-                </div>
-                <div class="column">
-                  <div>
-                    <p class="resepsi-waktu has-text-weight-normal is-size-6">Resepsi</p>
-                    <p class="resepsi-hour-waktu has-text-weight-bold is-size-5">19.00 - 21.00 WIB</p>
+                  <div class="event-content">
+                    <span class="event-day">Sabtu,</span>
+                    <span class="event-day-number">21</span>
+                    <span class="event-month-year">Maret 2022</span>
                   </div>
                 </div>
               </div>
+              <div class="column">
+                <div class="box card-pink">
+                  <div class="mb-1rem">
+                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M21.9999 0.333374C27.7463 0.333374 33.2573 2.61611 37.3206 6.67939C41.3839 10.7427 43.6666 16.2537 43.6666 22C43.6666 27.7464 41.3839 33.2574 37.3206 37.3207C33.2573 41.384 27.7463 43.6667 21.9999 43.6667C16.2536 43.6667 10.7426 41.384 6.67927 37.3207C2.61598 33.2574 0.333252 27.7464 0.333252 22C0.333252 16.2537 2.61598 10.7427 6.67927 6.67939C10.7426 2.61611 16.2536 0.333374 21.9999 0.333374V0.333374ZM21.9999 4.66671C17.4028 4.66671 12.994 6.49289 9.7434 9.74352C6.49277 12.9942 4.66658 17.403 4.66658 22C4.66658 26.5971 6.49277 31.0059 9.7434 34.2566C12.994 37.5072 17.4028 39.3334 21.9999 39.3334C26.597 39.3334 31.0058 37.5072 34.2564 34.2566C37.5071 31.0059 39.3332 26.5971 39.3332 22C39.3332 17.403 37.5071 12.9942 34.2564 9.74352C31.0058 6.49289 26.597 4.66671 21.9999 4.66671V4.66671ZM19.8333 11.1667C20.3404 11.1665 20.8315 11.3442 21.221 11.6689C21.6106 11.9935 21.874 12.4445 21.9653 12.9434L21.9999 13.3334V22H28.4999C29.0413 21.999 29.5635 22.2008 29.9636 22.5656C30.3638 22.9304 30.6128 23.4317 30.6617 23.9709C30.7106 24.5102 30.5559 25.0481 30.228 25.479C29.9 25.9098 29.4227 26.2022 28.8899 26.2987L28.4999 26.3334H19.8333C19.3261 26.3335 18.835 26.1558 18.4455 25.8312C18.0559 25.5065 17.7925 25.0555 17.7013 24.5567L17.6666 24.1667V13.3334C17.6666 12.7587 17.8949 12.2076 18.3012 11.8013C18.7075 11.395 19.2586 11.1667 19.8333 11.1667V11.1667Z"
+                        fill="#4C2F30" />
+                    </svg>
+                  </div>
+
+                  <div class="event-content">
+                    <div class="akad-resepsi">
+                      <div class="akad mb-1rem">
+                        <div>Akad Nikah</div>
+                        <div>17.00 WIB</div>
+                      </div>
+                      <div class="resepsi mb-1rem">
+                        <div>Resepsi</div>
+                        <div>19.00 - 21.00 WIB</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box card-pink"><svg width="30" height="44" viewBox="0 0 30 44" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M28.5851 9.00004C30.7734 13.7017 30.2751 19.2484 27.8701 23.755C25.8334 27.4167 22.9084 30.515 20.4167 33.9167C19.3334 35.4334 18.2501 37.0584 17.4484 38.8134C17.1667 39.3984 16.9717 40.005 16.7551 40.6117C16.5384 41.2184 16.3434 41.825 16.1484 42.4317C15.9534 42.995 15.7151 43.6667 15.0001 43.6667C14.1551 43.6667 13.9167 42.7134 13.7434 42.0634C13.2234 40.4817 12.7034 38.965 11.9017 37.5134C10.9917 35.8017 9.8434 34.22 8.6734 32.6817L28.5851 9.00004ZM8.76007 14.2434L1.61007 22.7367C2.93174 25.5317 4.9034 27.915 6.7884 30.2984C7.2434 30.84 7.6984 31.4034 8.13174 31.9884L17.1667 21.285L17.0801 21.3067C13.9167 22.39 10.4067 20.7867 9.15007 17.6667C8.97674 17.2984 8.84674 16.865 8.76007 16.4317C8.64087 15.7144 8.64087 14.9823 8.76007 14.265V14.2434M3.25674 6.01004L3.23507 6.03171C-0.274931 10.4734 -0.881598 16.6484 1.22007 21.87L9.86507 11.6L9.75674 11.4917L3.25674 6.01004M19.8101 1.11337L12.8334 9.36837L12.9201 9.34671C15.8234 8.35004 19.0734 9.60671 20.5467 12.25C20.8717 12.8567 21.1317 13.5067 21.2184 14.1567C21.3484 14.98 21.3917 15.565 21.2401 16.3667V16.3884L28.1734 8.15504C26.361 4.86038 23.3875 2.35801 19.8317 1.13504L19.8101 1.11337M10.4284 10.9284L18.9001 0.853374L18.8134 0.831707C17.5567 0.506707 16.2784 0.333374 15.0001 0.333374C10.7317 0.333374 6.70174 2.17504 3.84174 5.33837L3.7984 5.36004L10.4284 10.9284V10.9284Z"
+                  fill="#4C2F30" />
+
+                <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps&output=embed"
+                  frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"></iframe>
+              </svg>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Begin live_streaming Section -->
-    <section class="section-darker" id="live_streaming">
-      <div data-aos="fade-up" data-aos-easing="linear">
-        <div class="text-edwarn-script has-text-centered is-size-2 has-text-weight-normal">Live Streaming</div>
-        <div class="columns is-centered">
-          <div class="column is-four-fifths has-text-centered">
-            <div class="mb-3rem is-size-6">Tanpa mengurangi rasa hormat, acara pernikahan hanya akan dihadiri
-              oleh
-              keluarga serta kerabat dalam jumlah undangan terbatas dan mengikuti protokol kesehatan pemerintah.
-              Bapak/Ibu, Saudara/I dapat hadir secara virtual dalam acara pernikahan putra-putri kami melalui :</div>
-            <figure class="image is-16by9">
-              <iframe class="has-ratio" width="640" height="360"
-                src="https://www.youtube.com/embed/S6leNuXd-6Q?controls=0" frameborder="0" allowfullscreen></iframe>
-            </figure>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End live_streaming Content -->
-
     <!-- Begin say Section -->
-    <section class="section-img" id="say">
+    <section class="section-img section" id="say">
       <div data-aos="fade-up" data-aos-easing="linear">
-        <div class="text-edwarn-script has-text-centered is-size-1 has-text-weight-normal has-text-white">
-          Ucapan Dan Doa
+        <div class="edwardian-normal text-header has-text-centered has-text-white mb-3rem">
+          Ucapan & Doa
         </div>
         <div class="columns is-centered">
           <div class="column is-one-third">
-            <form action="" class="mb-1rem">
+            <form action="" class="mb-3rem">
               <!-- <div class="field">
                 <div class="control">
                   <input class="input" type="text" placeholder="Name" value="Dari" readonly>
@@ -341,8 +332,11 @@
               </div>
 
               <div class="buttons is-centered">
-                <button type="button" class="btn-submit-say is-responsive">
-                  Kirim Ucapan
+                <button type="button" class="btn-submit-say is-responsive is-focused">
+                  <span class="icon is-small">
+                    <i class="fas fa-pencil"></i>
+                  </span>
+                  <span class="baskervile-normal">Kirim Ucapan</span>
                 </button>
               </div>
             </form>
@@ -412,20 +406,26 @@
     </section>
     <!-- End say Content -->
 
-    <!-- Begin live_streaming Section -->
-    <section class="section-darker" id="live_streaming">
+    <!-- Begin give Section -->
+    <section class="section-dark section give section-give" id="give">
       <div data-aos="fade-up" data-aos-easing="linear">
-        <div class="text-edwarn-script has-text-centered is-size-2 has-text-weight-normal">Tanda Kasih</div>
         <div class="columns is-centered">
-          <div class="column is-four-fifths has-text-centered">
-            <div class="mb-3rem is-size-6">Terima kasih telah berkenan mengirimkan hadiah untuk pernikahan kami. Hadiah
-              dapat dikirimkan melalui transfer bank ke rekening di bawah ini :</div>
-            <div class="box-transfer columns is-flex is-vcentered has-text-centered">
-              <div class="column">
-                <h1 class="title has-text-weight-bold is-size-4">Nama Bank</h1>
-                <div style="margin-bottom: 1.5rem;">
-                  <p class="has-text-weight-normal is-size-6">12313213</p>
-                  <p class="has-text-weight-normal is-size-6">A/n Mas nya</p>
+          <div class="column is-four-fifths">
+            <div class="columns">
+              <!-- <div class="column"></div> -->
+              <div class="column"></div>
+              <div class="column is-three-fifths has-text-right">
+                <div class="edwardian-normal text-header mb-1rem">Tanda Kasih</div>
+                <div class="desc-give baskervile-normal is-half mb-3rem">Terima kasih telah berkenan mengirimkan hadiah
+                  untuk pernikahan kami. Hadiah dapat dikirimkan melalui transfer bank ke rekening di bawah ini :</div>
+              </div>
+            </div>
+            <div class="box-give columns is-flex is-vcentered has-text-centered">
+              <div class="column baskervile-normal">
+                <h1 class="give-name-bank">Nama Bank</h1>
+                <div class="mb-3rem give-value">
+                  <p>12313213</p>
+                  <p>A/n Mas nya</p>
                 </div>
                 <button type="button" class="btn-copy-rekenening">Copy Rekening</button>
               </div>
@@ -434,13 +434,13 @@
         </div>
       </div>
     </section>
-    <!-- End live_streaming Content -->
+    <!-- End give Content -->
 
     <!-- Begin galeri -->
-    <section class="section-light regular-section is-fullheight" id="galeri">
+    <section class="section-texture section has-text-centered has-vertically-aligned-content" id="galeri">
       <div class="container">
         <div data-aos="fade-up" data-aos-easing="linear">
-          <div class="text-edwarn-script has-text-centered is-size-2 has-text-weight-normal">Galeri Foto</div>
+          <div class="edwardian-normal text-header mb-3rem">Galeri Foto</div>
           <div class="container is-fluid">
             <div class="columns">
               <div class="column">
@@ -485,8 +485,10 @@
     <div class="container">
       <div class="columns is-flex is-vcentered has-text-centered">
         <div class="column">
-          <div class="name-client">Mas & Mba</div>
-          <div class="thankyou">Terimakasih</div>
+          <div class="baskervile-normal footer-thanks mb-1rem">TERIMAKASIH</div>
+          <div class="edwardian-normal footer-client">Arya & Nurul</div>
+          <div class="baskervile-normal footer-date mb-3rem">01 . 01 . 2022</div>
+          <div class="baskervile-normal footer-pecatu">Created by Pecatudesign</div>
         </div>
       </div>
     </div>

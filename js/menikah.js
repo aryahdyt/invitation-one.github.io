@@ -1,9 +1,9 @@
 
 
 
-$(document).on('click', function(){
-  document.getElementById("my_audio").play();
-});
+// $(document).on('click', function(){
+//   document.getElementById("my_audio").play();
+// });
 
 // Get that hamburger menu cookin' //
 
