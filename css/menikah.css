@@ -368,15 +368,58 @@ html {
 
 .element-flower{
   position: relative;
+  width: inherit;
+  border: #26ade4 3px solid;
 }
 
 .element-flower .left-el {
+  overflow: hidden;
   position: absolute;
   top: 0px;
   left: -20px;
 }
 
+.parent-fl{
+  /* background-color: #26ade4; */
+  position: absolute;
+  /* bottom: calc(0.8 * -169vh); */
+  top: 30em;
+  width: 100%;
+  height: fit-content;
+}
+
 .flower-left-el {
+    /* background: url(../image/1-01.png) no-repeat;
+    background-position-x: -25rem, left;
+    background-size: cover;
+    height: 60rem;
+    rotate: 9.79deg;
+    animation: animate-flower 2s alternate infinite; */
+    background: url(../image/1-01up.png);
+    background-repeat: no-repeat;
+    /* background-position-x: -10rem, left; */
+    background-position-y: 0rem;
+    background-size: 30%;
+    height: calc(0.8* 83vw);
+    width: 80%;
+    rotate: 9.79deg;
+    animation: animate-flower 2s alternate infinite;
+}
+
+.flower-right-el {
+  position: absolute;
+  right: -856px;
+  background-repeat: no-repeat;
+  background-image: url(../image/1-01.png);
+  background-position-x: 0;
+  background-position-y: -110px;
+  width: 70rem;
+  height: 112rem;
+  background-size: contain;
+  rotate: 310deg;
+  animation: animate-flower 2s alternate infinite;
+}
+/* .flower-left-el {
   position: absolute;
   background-repeat: no-repeat;
   background-image: url(../image/1-01.png);
@@ -402,7 +445,7 @@ html {
   background-size: contain;
   rotate: 310deg;
   animation: animate-flower 2s alternate infinite;
-}
+} */
 
 /* .flower-right-el::before{
   -moz-transform: scaleX(-1);
