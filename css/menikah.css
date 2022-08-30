@@ -9,6 +9,11 @@
   box-sizing: border-box;
 }
 
+
+body{
+  overflow: hidden;
+}
+
 html {
   /* font-family: 'Raleway', Tahoma, sans-serif; */
   width: 100%;
@@ -202,7 +207,7 @@ html {
   font-style: normal;
   font-weight: 400;
   font-size: 58px;
-  letter-spacing: 0.06em;
+  /* letter-spacing: 0.06em; */
 
   color: #644343;
 }
@@ -369,24 +374,20 @@ html {
 .element-flower{
   position: relative;
   width: inherit;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   /* border: #26ade4 3px solid; */
 }
 
-.element-flower .left-el {
-  overflow: hidden;
-  position: absolute;
-  top: 0px;
-  left: -20px;
-}
-
-.parent-fl{
+/* .parent-fl-left{ */
   /* background-color: #26ade4; */
-  position: absolute;
+  /* position: absolute; */
   /* bottom: calc(0.8 * -169vh); */
-  top: 30em;
+  /* top: 30em;
   width: 100%;
   height: fit-content;
-}
+} */
 
 .flower-left-el {
     /* background: url(../image/1-01.png) no-repeat;
@@ -395,29 +396,37 @@ html {
     height: 60rem;
     rotate: 9.79deg;
     animation: animate-flower 2s alternate infinite; */
+    position: absolute;
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    /* top: 10rem; */
+    top: calc(0.8* 83vh);
     background: url(../image/1-01up.png);
     background-repeat: no-repeat;
     /* background-position-x: -10rem, left; */
     background-position-y: 0rem;
-    background-size: 30%;
-    height: calc(0.8* 83vw);
-    width: 80%;
+    background-size: contain;
+    /* height: calc(0.8* 83vw); */
+    height: 50rem;
+    width:50%;
     rotate: 9.79deg;
     animation: animate-flower 2s alternate infinite;
 }
 
 .flower-right-el {
   position: absolute;
-  right: -856px;
+  left: 50%;
+  top: calc(0.8* 141vh);
+  background: url(../image/1-01up.png);
   background-repeat: no-repeat;
-  background-image: url(../image/1-01.png);
-  background-position-x: 0;
-  background-position-y: -110px;
-  width: 70rem;
-  height: 112rem;
-  background-size: contain;
+  background-position-x: right;
+  background-size: 50%;
+  height: calc(0.8* 83vw);
+  width: 80%;
   rotate: 310deg;
   animation: animate-flower 2s alternate infinite;
+
 }
 /* .flower-left-el {
   position: absolute;
