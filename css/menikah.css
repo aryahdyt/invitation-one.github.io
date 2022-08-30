@@ -369,7 +369,7 @@ html {
 .element-flower{
   position: relative;
   width: inherit;
-  border: #26ade4 3px solid;
+  /* border: #26ade4 3px solid; */
 }
 
 .element-flower .left-el {
