@@ -432,28 +432,26 @@ html {
     /* left: 50%; */
     /* transform: translate(-50%, -50%); */
     /* top: 10rem; */
-    top: calc(0.8* 83vh);
+    top: 25em;
     background: url(../image/1-01up.png);
     background-repeat: no-repeat;
     /* background-position-x: -10rem, left; */
-    background-position-y: 0rem;
-    background-size: contain;
-    /* height: calc(0.8* 83vw); */
-    height: 50rem;
-    width:50%;
-    rotate: 9.79deg;
+       background-size: contain;
+    height: 38em;
+    width: 80%;
+    rotate: 9.8deg;
     animation: animate-flower 2s alternate infinite;
 }
 
 .flower-right-el {
   position: absolute;
-  left: 50%;
-  top: calc(0.8* 141vh);
+  right: -14em;
+  top: 42em;
   background: url(../image/1-01up.png);
   background-repeat: no-repeat;
   background-position-x: right;
-  background-size: 50%;
-  height: calc(0.8* 83vw);
+  background-size: contain;
+  height: 38em;
   width: 80%;
   rotate: 310deg;
   animation: animate-flower 2s alternate infinite;
@@ -513,7 +511,6 @@ html {
   z-index: 2;
 }
 
-
 .space40px{
   height: 40px;
 }
@@ -530,6 +527,7 @@ html {
 
 .main-content .section-texture {
 position: relative;
+z-index: 1;
 }
 
 .main-content .section-texture:before {

@@ -13,12 +13,12 @@ $(document).on('click', '.btn-open', function () {
   landing.classList.remove('is-hidden');
   landing.classList.add('animate__animated', 'animate__zoomIn');
 
-  landing.addEventListener('animationend', () => {
+  // landing.addEventListener('animationend', () => {
     const init = document.querySelector('.initial-view');
     init.style.setProperty('--animate-duration', '.5s');
     init.classList.add('animate__animated', 'animate__zoomOut');
   });
-});
+// });
 
 // Get that hamburger menu cookin' //
 
