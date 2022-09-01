@@ -240,7 +240,8 @@ html {
 .section .text-header{
   font-style: normal;
   font-weight: 400;
-  font-size: 10vmin;
+  /* font-size: 10vmin; */
+  font-size: calc(15px + 3.390625vw);
   line-height: normal !important;
   /* font-size: 3.5rem; */
   /* letter-spacing: 0.06em; */
@@ -478,7 +479,7 @@ html {
     /* left: 50%; */
     /* transform: translate(-50%, -50%); */
     /* top: 10rem; */
-    top: 25em;
+    top: 27em;
     left: -5em;
     background: url(../image/1-01up.png);
     background-repeat: no-repeat;
@@ -495,7 +496,7 @@ html {
   right: -45vmin;
   /* left: 30em; */
   /* top: 40em; */
-  bottom: -70em;
+  bottom: -74em;
   background: url(../image/1-01up.png);
   background-repeat: no-repeat;
   background-position-x: right;
