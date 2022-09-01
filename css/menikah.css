@@ -185,6 +185,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-size: 120px;
+  width: 80%;
+  margin: 3rem auto;
   line-height: 141px;
   text-align: center;
   
@@ -238,7 +240,9 @@ html {
 .section .text-header{
   font-style: normal;
   font-weight: 400;
-  font-size: 58px;
+  font-size: 10vmin;
+  line-height: normal !important;
+  /* font-size: 3.5rem; */
   /* letter-spacing: 0.06em; */
 
   color: #644343;
@@ -317,6 +321,32 @@ html {
   font-size: 24px;
 }
 
+.event .map-responsive{
+
+  overflow:hidden;
+
+  padding-bottom:56.25%;
+
+  position:relative;
+
+  height:0;
+
+}
+
+.event .map-responsive iframe{
+
+  left:0;
+
+  top:0;
+
+  height:100%;
+
+  width:100%;
+
+  position:absolute;
+
+}
+
 .btn-submit-say{
   cursor: pointer;
   padding: 0.7rem;
@@ -329,13 +359,18 @@ html {
   text-transform: uppercase;
 }
 
+.give img{
+  position: absolute;
+  visibility: hidden;
+}
+
 .give .desc-give{
   font-weight: 400;
   font-size: 20px;
   line-height: 122.5%;
   /* or 27px */
 
-  text-align: right;
+  /* text-align: right; */
   letter-spacing: 0.035em;
 
   color: #4C2F30;
@@ -365,7 +400,7 @@ html {
 
 .footer .footer-thanks{
   font-weight: 600;
-  font-size: 20px;
+  font-size: 3.5vmin;
   line-height: 24px;
   letter-spacing: 0.6em;
 
@@ -374,14 +409,17 @@ html {
 
 .footer .footer-client{
   font-weight: 400;
+  line-height: 75px;
+  margin: 3rem auto;
   font-size: 72px;
+  width: 50%;
   
   color: #FFFFFF;
 }
 
 .footer .footer-date{
   font-weight: 600;
-  font-size: 20px;
+  font-size: 3vmin;
   line-height: 24px;
   letter-spacing: 0.2em;
 
@@ -391,19 +429,27 @@ html {
 .footer .footer-pecatu{
   /* width: 150px; */
   font-weight: 500;
-  font-size: 20px;
+  font-size: 3vmin;
   
   color: #FFFFFF;
 }
 
 .card-pink{
-  padding: 60px;
+  padding: 60px 5%;
+  background-color: #F4E2E2;
+  /* height: 350px; */
+  height: fit-content;
+}
+.card-pink-350{
+  padding: 60px 5%;
   background-color: #F4E2E2;
   height: 350px;
+  /* height: fit-content; */
 }
 
 .element-flower{
   position: relative;
+  /* z-index: 2; */
   width: inherit;
   top: 50%;
   left: 50%;
@@ -433,6 +479,7 @@ html {
     /* transform: translate(-50%, -50%); */
     /* top: 10rem; */
     top: 25em;
+    left: -5em;
     background: url(../image/1-01up.png);
     background-repeat: no-repeat;
     /* background-position-x: -10rem, left; */
@@ -445,8 +492,10 @@ html {
 
 .flower-right-el {
   position: absolute;
-  right: -14em;
-  top: 42em;
+  right: -45vmin;
+  /* left: 30em; */
+  /* top: 40em; */
+  bottom: -70em;
   background: url(../image/1-01up.png);
   background-repeat: no-repeat;
   background-position-x: right;
@@ -457,42 +506,6 @@ html {
   animation: animate-flower 2s alternate infinite;
 
 }
-/* .flower-left-el {
-  position: absolute;
-  background-repeat: no-repeat;
-  background-image: url(../image/1-01.png);
-  background-position-x: -410px;
-  background-position-y: 90px;
-  width: 70rem;
-  height: 84rem;
-  background-size: contain;
-  rotate: 9.79deg;
-  animation: animate-flower 2s alternate infinite;
-
-}
-
-.flower-right-el {
-  position: absolute;
-  right: -856px;
-  background-repeat: no-repeat;
-  background-image: url(../image/1-01.png);
-  background-position-x: 0;
-  background-position-y: -110px;
-  width: 70rem;
-  height: 112rem;
-  background-size: contain;
-  rotate: 310deg;
-  animation: animate-flower 2s alternate infinite;
-} */
-
-/* .flower-right-el::before{
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  filter: FlipH;
-  -ms-filter: "FlipH";
-} */
 
 @keyframes animate-flower {
   from {
@@ -527,7 +540,7 @@ html {
 
 .main-content .section-texture {
 position: relative;
-z-index: 1;
+z-index: -1;
 }
 
 .main-content .section-texture:before {
@@ -538,7 +551,7 @@ z-index: 1;
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.4;  
+  opacity: 0.8;  
   background: url(../image/bg-texture.jpg) no-repeat;
   background-position-y: -1px;
   /* opacity: 0.4; */
@@ -572,11 +585,21 @@ z-index: 1;
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.4;
+  opacity: 0.2;
   background-image: url(../image/2-01.png);
   background-repeat: no-repeat;
   background-position-x: -3px, left;
   background-size: contain;
+  /* background-size: 100% auto; */
+  /* background-attachment: fixed; */
+}
+
+
+
+@media (max-width: 518px) {
+  .main-content .section-give:before {
+    background-size: cover;
+  }
 }
 
 .main-content .section-dark {
@@ -800,7 +823,7 @@ vertical-align: middle;
 }
 
 .footer {
-  background: linear-gradient(rgba(41, 41, 41, 0.4), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.55) url(../image/pecatu.jpg) no-repeat;
+  background: linear-gradient(rgba(41, 41, 41, 0.1), rgba(0, 0, 0, 0.4)), url(../image/pecatu.jpg) no-repeat;
   background-size: cover;
   padding: 80px 40px;
   /* bottom: 0;

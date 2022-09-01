@@ -16,7 +16,7 @@ $(document).on('click', '.btn-open', function () {
   // landing.addEventListener('animationend', () => {
     const init = document.querySelector('.initial-view');
     init.style.setProperty('--animate-duration', '.5s');
-    init.classList.add('animate__animated', 'animate__zoomOut');
+    init.classList.add('animate__animated', 'animate__zoomOut', 'is-hidden');
   });
 // });
 
