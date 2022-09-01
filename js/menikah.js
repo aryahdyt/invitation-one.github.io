@@ -1,13 +1,14 @@
 
 
 
-$(document).on('click', function(){
-  // document.getElementById("my_audio").play();
-});
+let is_play = false;
 
 $(document).on('click', '.btn-open', function () {
-  console.log('cliked');
-  document.getElementById("my_audio").play();
+  // console.log('cliked');
+  play_music();
+
+  document.getElementById('btnMusic').classList.remove('is-hidden');
+  document.getElementById('toTop').classList.remove('is-hidden');
 
   const landing = document.querySelector('.main-content');
   landing.classList.remove('is-hidden');
@@ -44,29 +45,43 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
-// Smooth Anchor Scrolling
-$(document).on("click", 'a[href^="#"]', function(event) {
-  event.preventDefault();
-  $("html, body").animate(
-    {
-      scrollTop: $($.attr(this, "href")).offset().top
-    },
-    500
-  );
+$(document).on('click', '#btnMusic', function(){
+  console.log(is_play);
+  if (is_play) {
+    pause_music();
+    $(this).find('.icon').removeClass('fa-music').addClass('fa-pause');
+  } else {
+    play_music();
+    $(this).find('.icon').removeClass('fa-pause').addClass('fa-music');
+  }
+});
+
+function play_music(){
+  document.getElementById("my_audio").play();
+  is_play = true;
+}
+
+function pause_music(){
+  document.getElementById("my_audio").pause();
+  is_play = false;
+}
+
+$(document).on('click','#toTop',function() {
+  $("html, body").animate({ scrollTop: 0 }, 500);
 });
 
 // When the user scrolls down 20px from the top of the document, show the scroll up button
 window.onscroll = function() {
-  // scrollFunction();
+  scrollFunction();
 };
 
-// function scrollFunction() {
-//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//     document.getElementById("toTop").style.display = "block";
-//   } else {
-//     document.getElementById("toTop").style.display = "none";
-//   }
-// }
+function scrollFunction() {
+  if (window.scrollY > (window.outerHeight + (window.outerHeight/2))) {
+    document.getElementById("toTop").style.display = "flex";
+  } else {
+    document.getElementById("toTop").style.display = "none";
+  }
+}
 
 // Preloader
 // $(document).ready(function($) {

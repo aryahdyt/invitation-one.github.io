@@ -930,29 +930,55 @@ vertical-align: middle;
 
 /* input:focus { outline: none; } */
 
-#toTop {
-  height: 50px;
-  width: 50px;
-  display: none;
+#btnMusic {
+  height: 30px;
+  width: 30px;
+  /* padding: 10px; */
+  display: flex;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 3rem;
+  right: 1rem;
   z-index: 99;
   border: none;
   outline: none;
   background-color: #996E6D;
   color: white;
   cursor: pointer;
-  border-radius: 50%;
-  font-size: 2rem;
+  border-radius: 10%;
+  font-size: 18px;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
   box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
 }
 
-#toTop a {
+#toTop {
+  height: 30px;
+  width: 30px;
+  /* padding: 10px; */
+  display: none;
+  position: fixed;
+  bottom: 5.5rem;
+  right: 1rem;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #996E6D;
   color: white;
+  cursor: pointer;
+  border-radius: 10%;
+  font-size: 18px;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
 }
 
-#toTop:hover {
+/* #toTop a {
+  color: white;
+} */
+
+.fixed-button:hover {
   background-color: #BC8887;
 }
 
