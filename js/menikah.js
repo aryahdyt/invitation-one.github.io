@@ -22,7 +22,6 @@ $(document).on('click', '.btn-open', function () {
 // });
 
 // Get that hamburger menu cookin' //
-
 document.addEventListener("DOMContentLoaded", function() {
   // Get all "navbar-burger" elements
   var $navbarBurgers = Array.prototype.slice.call(
@@ -43,7 +42,29 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
   }
+
+  getCountdown();
 });
+
+function getCountdown(){
+  console.log('cdo');
+  var now = new Date();
+  var day = now.getDate();
+  var month = now.getMonth() + 1;
+  var year = now.getFullYear() + 1;
+
+  var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
+  var harih = '12/31/2022 17:00:00';
+
+  $('.hero-countdown').countdown({
+    date: harih, // TODO Date format: 07/27/2017 17:00:00
+    offset: +7, // TODO Your Timezone Offset
+    day: 'Hari',
+    days: 'Hari'
+  }, function () {
+    // alert('Done!');
+  });
+}
 
 $(document).on('click', '#btnMusic', function(){
   console.log(is_play);
@@ -69,6 +90,21 @@ function pause_music(){
 $(document).on('click','#toTop',function() {
   $("html, body").animate({ scrollTop: 0 }, 500);
 });
+
+$(document).on('click', '.copied', function(){
+  copyToClipboard('.no-rek');
+});
+
+function copyToClipboard(selector_text){
+  console.time('time1');
+	var temp = $("<input>");
+  $("body").append(temp);
+  temp.val($(selector_text).text()).select();
+  document.execCommand("copy");
+  temp.remove();
+  console.timeEnd('time1');
+}
+
 
 // When the user scrolls down 20px from the top of the document, show the scroll up button
 window.onscroll = function() {

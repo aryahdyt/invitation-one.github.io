@@ -19,15 +19,11 @@
   <link rel="stylesheet" href="https://unpkg.com/bulma-tooltip@0.1.5/dist/bulma-tooltip.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" type="text/css" href="css/menikah.css" />
+  <link rel="stylesheet" type="text/css" href="font/font.css" />
   <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
-  <script src="https://kit.fontawesome.com/2828f7885a.js"
-    integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG" crossorigin="anonymous">
-  </script>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="js/jquery.coundown.js"></script>
   <link rel="icon" type="image/png" href="image/favicon.png" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23064379-20"></script>
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23064379-20"></script> -->
   <!-- Begin Script for Countdown -->
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -169,35 +165,35 @@
 
             <div class="hero-countdown baskervile-normal color-brown-dark">
               <div class="box-coundown">
-                <span class="coundown-number">
+                <span class="coundown-number days">
                   12
                 </span>
-                <span class="coundown-desc">
+                <span class="coundown-desc days_text">
+                  Hari
+                </span>
+              </div>
+              <div class="box-coundown">
+                <span class="coundown-number hours">
+                  12
+                </span>
+                <span class="coundown-desc hours_text">
                   Jam
                 </span>
               </div>
               <div class="box-coundown">
-                <span class="coundown-number">
+                <span class="coundown-number minutes">
                   12
                 </span>
-                <span class="coundown-desc">
-                  Jam
+                <span class="coundown-desc minutes_text">
+                  Menit
                 </span>
               </div>
               <div class="box-coundown">
-                <span class="coundown-number">
+                <span class="coundown-number seconds">
                   12
                 </span>
-                <span class="coundown-desc">
-                  Jam
-                </span>
-              </div>
-              <div class="box-coundown">
-                <span class="coundown-number">
-                  12
-                </span>
-                <span class="coundown-desc">
-                  Jam
+                <span class="coundown-desc seconds_text">
+                  Detik
                 </span>
               </div>
             </div>
@@ -479,10 +475,10 @@
               <div class="column baskervile-normal">
                 <h1 class="give-name-bank">Nama Bank</h1>
                 <div class="mb-3rem give-value">
-                  <p>12313213</p>
+                  <p class="no-rek">12313213</p>
                   <p>A/n Mas nya</p>
                 </div>
-                <button type="button" class="btn-copy-rekenening">Copy Rekening</button>
+                <button type="button" class="btn-copy-rekenening copied">Copy Rekening</button>
               </div>
             </div>
           </div>
@@ -552,9 +548,14 @@
 
   <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/menikah.js"></script>
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+  <script src="https://kit.fontawesome.com/2828f7885a.js"
+    integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG" crossorigin="anonymous">
+  </script>
+  <script src="js/jquery.coundown.js"></script>
+  <script src="js/menikah.js"></script>
   <script>
     AOS.init({
       easing: "ease-out",
