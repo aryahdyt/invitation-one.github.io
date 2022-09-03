@@ -18,7 +18,12 @@ $(document).on('click', '.btn-open', function () {
     const init = document.querySelector('.initial-view');
     init.style.setProperty('--animate-duration', '.5s');
     init.classList.add('animate__animated', 'animate__zoomOut', 'is-hidden');
-  });
+
+    
+  AOS.refresh();
+
+  $("html, body").animate({ scrollTop: 0 }, 500);
+});
 // });
 
 // Get that hamburger menu cookin' //
