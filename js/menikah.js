@@ -5,7 +5,7 @@ let is_play = false;
 
 $(document).on('click', '.btn-open', function () {
   // console.log('cliked');
-  play_music();
+  // play_music();
 
   document.getElementById('btnMusic').classList.remove('is-hidden');
   document.getElementById('toTop').classList.remove('is-hidden');
@@ -18,11 +18,17 @@ $(document).on('click', '.btn-open', function () {
     const init = document.querySelector('.initial-view');
     init.style.setProperty('--animate-duration', '.5s');
     init.classList.add('animate__animated', 'animate__zoomOut', 'is-hidden');
-
     
-  AOS.refresh();
+    function handleAnimationEnd(event) {
+      $("html, body").animate({ scrollTop: 0 }, 1000);
+      event.stopPropagation();
+      landing.classList.remove('animate__animated', 'animate__zoomIn');
+      // resolve('Animation ended');
+      AOS.refresh();
+    }
+  
+    landing.addEventListener('animationend', handleAnimationEnd, {once: true});
 
-  $("html, body").animate({ scrollTop: 0 }, 500);
 });
 // });
 
