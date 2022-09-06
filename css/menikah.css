@@ -649,6 +649,12 @@ z-index: -1;
   padding: 80px 40px;
 }
 
+@media (max-width: 518px) {
+  .main-content .section-img {
+    background-attachment: initial;
+  }
+}
+
 .main-content .section-dark.resume {
   height: 400px;
   padding-top: 60px;
