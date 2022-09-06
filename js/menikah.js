@@ -3,6 +3,11 @@
 
 let is_play = false;
 
+let dummysay = [
+  {name: 'Arya', say: 'Temanku ini sudah punya gandengan, aku masih betah dalam kejombloan. Selamat menikah, teman. Aku pasti segera menyusulmu! 🥰😘🥰😘', date: '2022-09-06T21:41:13+07:00'},
+  {name: 'ayra', say: '❤️❤️ Doa terbaik untuk kamu dan pasangan, semoga samawa ’till jannah dan membangun keluarga sesuai syariat Al-Qur’an dan hadis. ❤️❤️', date: '2022-01-06T21:41:13+07:00'},
+]
+
 $(document).on('click', '.btn-open', function () {
   // console.log('cliked');
   play_music();
@@ -30,6 +35,43 @@ $(document).on('click', '.btn-open', function () {
     landing.addEventListener('animationend', handleAnimationEnd, {once: true});
 
 });
+
+function getsays() {
+  let parent = $('.parent-say');
+  parent.empty();
+
+  let div = `<div class="box"><div class="media">
+    <div class="media-left"><figure class="image is-48x48 rounded">
+    <img class="is-rounded" src="https://robohash.org/{ava}" alt="Placeholder image">
+    </figure></div>
+    <div class="media-content"><div class="is-size-6 has-text-weight-semibold">{name}</div>
+    <small>{date}</small><div class="is-size-6 has-text-weight-normal">
+    {say}<br></div></div></div></div>`;
+  
+  $.each(dummysay, function(i, val){
+    let append = div.replace('{name}', val.name)
+    .replace('{ava}', val.name)
+    .replace('{date}', moment(val.date).fromNow())
+    .replace('{say}', val.say);
+
+    parent.append(append);
+  });
+}
+
+$(document).on('submit', '#form-say', function(e){
+  
+  e.preventDefault();
+  // let data = new FormData(this);
+  let data = $(this).serializeObject();
+  data.date = moment().format();   
+
+  dummysay.unshift(data);
+  
+  getsays();
+
+  $(this)[0].reset();
+  console.log(dummysay);
+});
 // });
 
 // Get that hamburger menu cookin' //
@@ -54,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
-  getCountdown();
+  getCountdown();getsays();
 });
 
 function getCountdown(){
@@ -129,6 +171,23 @@ function scrollFunction() {
     document.getElementById("toTop").style.display = "none";
   }
 }
+
+$.fn.serializeObject = function()
+{
+    var o = {};
+    var a = this.serializeArray();
+    $.each(a, function() {
+        if (o[this.name]) {
+            if (!o[this.name].push) {
+                o[this.name] = [o[this.name]];
+            }
+            o[this.name].push(this.value || '');
+        } else {
+            o[this.name] = this.value || '';
+        }
+    });
+    return o;
+};
 
 // Preloader
 // $(document).ready(function($) {
