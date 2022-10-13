@@ -41,15 +41,15 @@ html {
 }
 
 .mb-10rem{
-  margin-bottom: 7rem;
+  margin-bottom: 10rem !important;
 }
 
 .mb-7rem{
-  margin-bottom: 7rem;
+  margin-bottom: 7rem !important;
 }
 
 .mb-5rem{
-  margin-bottom: 5rem;
+  margin-bottom: 5rem  !important;
 }
 
 .mb-3rem{
